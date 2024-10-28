@@ -1,0 +1,5 @@
+# SPDX-FileCopyrightText: 2024 Dominik Wombacher <dominik@wombacher.cc>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+channelArn: "arn:aws:cloudtrail:<region>:<account>:channel/<integration>"
