@@ -10,7 +10,7 @@ To get the syslog service address please run the following command:
   export SERVICE_IP=$(kubectl get svc --namespace {{ .Release.Namespace }} {{ include "fluent-bit-syslog-to-aws-cloudtrail-data.fullname" . }} --template "{{"{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}"}}")
   echo $SERVICE_IP:{{ .Values.service.ports.syslog }}
 {{- else if contains "ClusterIP" .Values.service.type }}
-  export POD_NAME=$(kubectl get pods --namespace {{ .Release.Namespace }} -l "app.kubernetes.io/name={{ include "fluent-bit-syslog-to-aws-cloudtrail-data.name" . }},app.kubernetes.io/instance={{ .Release.Name }}" -o jsonpath="{.items[0].metadata.name}")
-  export CONTAINER_PORT=$(kubectl get pod --namespace {{ .Release.Namespace }} $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
-  echo $POD_NAME:$CONTAINER_PORT
+  export SVC_NAME=$(kubectl get svc --namespace {{ .Release.Namespace }} {{ include "fluent-bit-syslog-to-aws-cloudtrail-data.fullname" . }} -o jsonpath="{.metadata.name}")
+  export SVC_SYSLOG_PORT=$(kubectl get svc --namespace {{ .Release.Namespace }} {{ include "fluent-bit-syslog-to-aws-cloudtrail-data.fullname" . }} -o jsonpath="{.spec.ports[0].port}")
+  echo $SVC_NAME:$SVC_SYSLOG_PORT
 {{- end }}
