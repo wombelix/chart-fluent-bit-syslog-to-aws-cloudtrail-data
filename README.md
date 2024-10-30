@@ -96,8 +96,7 @@ Optional, but helpful for troubleshooting purposes, is to set
 ## Source
 
 The primary location is:
-[git.sr.ht/~wombelix/chart-fluent-bit-syslog-to-aws-cloudtrail-data](https://git.sr.ht/~wombelix/chart-fluent-bit-syslog-to-aws-cloudtrail-data)
-in sub-folder `helm/fluent-bit-syslog-to-aws-cloudtrail-data`.
+[git.sr.ht/~wombelix/chart-fluent-bit-syslog-to-aws-cloudtrail-data](https://git.sr.ht/~wombelix/chart-fluent-bit-syslog-to-aws-cloudtrail-data).
 
 Mirrors are available on
 [Codeberg](https://codeberg.org/wombelix/chart-fluent-bit-syslog-to-aws-cloudtrail-data),
