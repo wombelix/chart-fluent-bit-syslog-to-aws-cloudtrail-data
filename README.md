@@ -15,6 +15,10 @@ Container Image
 [![REUSE status](https://api.reuse.software/badge/git.sr.ht/~wombelix/chart-fluent-bit-syslog-to-aws-cloudtrail-data)](https://api.reuse.software/info/git.sr.ht/~wombelix/chart-fluent-bit-syslog-to-aws-cloudtrail-data)
 [![builds.sr.ht status](https://builds.sr.ht/~wombelix/chart-fluent-bit-syslog-to-aws-cloudtrail-data.svg)](https://builds.sr.ht/~wombelix/chart-fluent-bit-syslog-to-aws-cloudtrail-data?)
 
+## Notice
+
+This project is no longer actively maintained and archived
+
 ## Table of Contents
 
 * [Release](#release)
